@@ -15,11 +15,6 @@ btnTheme.addEventListener("click", () => {
   }
 });
 
-// const player1 = "X";
-// const player2 = "O";
-
-// let currentPlayer = player1;
-
 let p1 = document.getElementById("p1");
 let p2 = document.getElementById("p2");
 
@@ -27,20 +22,6 @@ let scoreX = 1;
 let scoreO = 1;
 
 const cells = document.querySelectorAll(".cell");
-
-// function changePlayer () {
-//     currentPlayer = currentPlayer === "X" ? "O" : "X";
-// }
-
-// cells.forEach(cell => {
-//     cell.addEventListener("click", () => {
-//         if (cell.textContent === "") {
-//             cell.textContent = currentPlayer;
-
-//             changePlayer()
-//         }
-//     })
-// });
 
 let board = ["", "", "", "", "", "", "", "", ""];
 let player = "X";
@@ -65,9 +46,6 @@ const reset = () => {
 
   player = "X";
 };
-
-// const winner = () =>
-//     win.some(([a, b, c]) => board[a] && board[a] === board[b] && board[a] === board[c]);
 
 cells.forEach((cell, i) => {
   cell.onclick = () => {
