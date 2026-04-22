@@ -23,7 +23,8 @@ btnTheme.addEventListener("click", () => {
 let p1 = document.getElementById("p1");
 let p2 = document.getElementById("p2");
 
-let score = 1;
+let scoreX = 1;
+let scoreO = 1;
 
 const cells = document.querySelectorAll(".cell");
 
@@ -79,11 +80,11 @@ cells.forEach((cell, i) => {
       alert(player + "Win 🏆");
 
       if (player === "X") {
-        p1.textContent = "Player 1: " + score++;
+        p1.textContent = "Player 1: " + scoreX++;
       }
 
       if (player === "O") {
-        p2.textContent = "Player 2: " + score++;
+        p2.textContent = "Player 2: " + scoreO++;
       }
 
       reset();
